@@ -9,6 +9,9 @@
 
 4、随机色度变换：改变图像的亮度、对比度和饱和度等色调，增加数据的色彩变化，增强模型的鲁棒性，使其在不同光照和颜色条件下具有更好的稳健性。目的在于解决光照复杂性问题。
  
+## 该实验选择的图片
+![cat](https://user-images.githubusercontent.com/128216499/228540657-44691d0c-e72c-46b8-afb4-fa837c4101e4.jpg)
+
 ## 运行train.py代码
 ```python
 import argparse
@@ -227,3 +230,30 @@ if __name__ == '__main__':
 ```
 ## 运行traiin.py最后结果
 ![image](https://user-images.githubusercontent.com/128216499/228105669-732f916d-8abb-4a1a-be6c-285f1da79ab8.png)
+
+## 运行data augmentation.py代码
+```python
+import torch
+import torchvision. transforms as transforms
+from PIL import Image
+
+#sys.path.append( "d:\program files\anaconda\lib\site-packages\matpLotlib")
+# 定义数据增广函数
+transform = transforms . Compose([
+    transforms.RandomResizedCrop(256),
+    transforms . ToTensor(),
+])
+
+# 加载图片
+image = Image.open(r'D:\GitHub_test\classification-basic-sample\data\train\train\cat.jpg')
+
+# 对图片进行增广
+augmented_image = transform(image)
+
+# 显示增广后的图片
+import matplotlib.pyplot as pLt
+pLt . imshow(augmented_image . permute(1, 2, 0))
+pLt. show()
+```
+## 结果
+![image](https://user-images.githubusercontent.com/128216499/228540277-a5897670-a589-485d-9285-9f20a9afb523.png)
