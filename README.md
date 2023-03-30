@@ -325,4 +325,5 @@ pLt . imshow(augmented_image1 . permute(1, 2, 0))
 pLt. show()
 ```
 ## 运行结果
+![image](https://user-images.githubusercontent.com/128216499/228820969-943d35af-4586-49ef-b1b0-aac6049f3f80.png)
 
