@@ -242,7 +242,6 @@ transform = transforms . Compose([
     transforms.RandomHorizontalFlip(p=0.5),
     transforms . ToTensor(),
 ])
-
 # 加载图片
 image1 = Image.open(r'D:\GitHub_test\classification-basic-sample\data\train\train\cat.jpg')
 # 对图片进行增广
@@ -281,8 +280,26 @@ pLt. show()
 ## 运行结果
 ![image](https://user-images.githubusercontent.com/128216499/228820138-fa30eda4-fe93-4016-b4a4-93aad09e833c.png)
 
-## 运行data augmentation.py代码
+## 运行scale cutting.py代码
+```python
+import torch
+import torchvision. transforms as transforms
+from PIL import Image
 
+# 定义数据增广函数
+transform = transforms . Compose([
+    transforms.RandomResizedCrop(256, scale=(0.5, 0.5), ratio=(1.0, 1.0)),
+    transforms . ToTensor(),
+])
+# 加载图片
+image1 = Image.open(r'D:\GitHub_test\classification-basic-sample\data\train\train\cat.jpg')
+# 对图片进行增广
+augmented_image1 = transform(image1)
+# 显示增广后的图片
+import matplotlib.pyplot as pLt
+pLt . imshow(augmented_image1 . permute(1, 2, 0))
+pLt. show()
+```
 ## 运行data augmentation.py代码
 ```python
 
