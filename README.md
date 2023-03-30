@@ -30,7 +30,6 @@ from torchvision import datasets
 from torch.utils.data import DataLoader
 from tools import warmup_lr
 
-
 # 初始化参数
 def get_args():
     """在下面初始化你的参数.
@@ -79,7 +78,6 @@ def get_args():
 
     # 返回参数集
     return args
-
 
 class Worker:
     def __init__(self, args):
@@ -305,7 +303,26 @@ pLt. show()
 
 ## 运行data augmentation.py代码
 ```python
+import torch
+import torchvision. transforms as transforms
+from PIL import Image
 
+# 定义数据增广函数
+transform = transforms . Compose([
+    transforms.RandomResizedCrop(256, scale=(0.5, 0.5), ratio=(1.0, 1.0)),
+    transforms.RandomHorizontalFlip(p=0.5),
+    transforms.RandomRotation(degrees=(-10, 10)),
+    transforms . ToTensor(),
+])
+
+# 加载图片
+image1 = Image.open(r'D:\GitHub_test\classification-basic-sample\data\train\train\cat.jpg')
+# 对图片进行增广
+augmented_image1 = transform(image1)
+# 显示增广后的图片
+import matplotlib.pyplot as pLt
+pLt . imshow(augmented_image1 . permute(1, 2, 0))
+pLt. show()
 ```
 ## 运行结果
 
