@@ -323,3 +323,9 @@ plt. show()
 ## 运行结果
 ![image](https://user-images.githubusercontent.com/128216499/228820969-943d35af-4586-49ef-b1b0-aac6049f3f80.png)
 
+
+
+
+
+## 运行结果
+![image](https://user-images.githubusercontent.com/128216499/228833428-7e9ef645-87ce-43a6-b869-2c3bf5851d63.png)
