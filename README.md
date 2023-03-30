@@ -17,7 +17,7 @@
 
 ![dog](https://user-images.githubusercontent.com/128216499/228836219-0dd47421-a0ac-42b6-befa-f56f3251ed64.jpg)
 
-## 运行train.py代码
+## 运行train.py
 ```python
 import argparse
 import time
@@ -230,10 +230,10 @@ if __name__ == '__main__':
                        % (args.model, epoch, val_acc, val_loss)
             torch.save(worker.model, save_dir)
 ```
-## 运行traiin.py结果
+## 运行结果
 ![image](https://user-images.githubusercontent.com/128216499/228105669-732f916d-8abb-4a1a-be6c-285f1da79ab8.png)
 
-## 运行flip horizontal.py代码（随机水平翻转）
+## 运行flip horizontal.py（随机水平翻转）
 ```python
 import torch
 import torchvision. transforms as transforms
@@ -256,7 +256,7 @@ plt. show()
 ## 运行结果
 ![image](https://user-images.githubusercontent.com/128216499/228819448-3e92f5ac-77c2-4c73-93dd-79a41f788881.png)
 
-## 运行rotate.py代码（随机旋转）
+## 运行rotate.py（随机旋转）
 ```python
 import torch
 import torchvision. transforms as transforms
@@ -281,7 +281,7 @@ plt. show()
 ## 运行结果
 ![image](https://user-images.githubusercontent.com/128216499/228820138-fa30eda4-fe93-4016-b4a4-93aad09e833c.png)
 
-## 运行scale cutting.py代码（随机缩放裁切，裁切后尺寸256）
+## 运行scale cutting.py（随机缩放裁切，裁切后尺寸256）
 ```python
 import torch
 import torchvision. transforms as transforms
@@ -304,7 +304,7 @@ plt. show()
 ## 运行结果
 ![image](https://user-images.githubusercontent.com/128216499/228820614-c238d08d-2120-4b59-939a-4b89f89b2e9e.png)
 
-## 运行data augmentation.py代码（三种数据增广相结合）
+## 运行data augmentation.py（三种数据增广相结合）
 ```python
 import torch
 import torchvision. transforms as transforms
@@ -329,7 +329,7 @@ plt. show()
 ## 运行结果
 ![image](https://user-images.githubusercontent.com/128216499/228820969-943d35af-4586-49ef-b1b0-aac6049f3f80.png)
 
-## 运行test.py代码（训练集数据和验证集数据都进行了数据增广，但两张图片不同时展示）
+## 运行test.py（训练集数据和验证集数据都进行了数据增广，但两张图片不同时展示）
 ```python
 from torchvision import transforms
 from PIL import Image
@@ -366,7 +366,7 @@ plt.show()
 ![image](https://user-images.githubusercontent.com/128216499/228834540-55f0a7e3-802e-4994-9af0-2247e254371f.png)
 ![image](https://user-images.githubusercontent.com/128216499/228834751-242cd548-5bab-442b-a473-081385061291.png)
 
-## 运行train_val.py代码（训练集数据和验证集数据都进行了数据增广，但两张图片可以同时展示）
+## 运行train_val.py（训练集数据和验证集数据都进行了数据增广，但两张图片可以同时展示）
 ```python
 from torchvision import transforms
 from PIL import Image
