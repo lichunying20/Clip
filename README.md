@@ -9,7 +9,9 @@
 4、随机色度变换：改变图像的亮度、对比度和饱和度等色调，增加数据的色彩变化，增强模型的鲁棒性，使其在不同光照和颜色条件下具有更好的稳健性。目的在于解决光照复杂性问题。
  
 ## 该实验选择的图片
+训练所用的照片
 ![cat](https://user-images.githubusercontent.com/128216499/228540657-44691d0c-e72c-46b8-afb4-fa837c4101e4.jpg)
+验证所用的照片
 ![dog](https://user-images.githubusercontent.com/128216499/228836219-0dd47421-a0ac-42b6-befa-f56f3251ed64.jpg)
 
 ## 运行train.py代码
