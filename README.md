@@ -232,8 +232,28 @@ if __name__ == '__main__':
 ![image](https://user-images.githubusercontent.com/128216499/228105669-732f916d-8abb-4a1a-be6c-285f1da79ab8.png)
 
 ## 运行flip horizontal.py代码（随机水平翻转）
+```python
+import torch
+import torchvision. transforms as transforms
+from PIL import Image
 
+# 定义数据增广函数
+transform = transforms . Compose([
+    transforms.RandomHorizontalFlip(p=0.5),
+    transforms . ToTensor(),
+])
 
+# 加载图片
+image1 = Image.open(r'D:\GitHub_test\classification-basic-sample\data\train\train\cat.jpg')
+# 对图片进行增广
+augmented_image1 = transform(image1)
+# 显示增广后的图片
+import matplotlib.pyplot as pLt
+pLt . imshow(augmented_image1 . permute(1, 2, 0))
+pLt. show()
+```
+
+## 运行结果
 
 ## 运行data augmentation.py代码
 
@@ -242,27 +262,7 @@ if __name__ == '__main__':
 
 ## 运行data augmentation.py代码
 ```python
-import torch
-import torchvision. transforms as transforms
-from PIL import Image
 
-#sys.path.append( "d:\program files\anaconda\lib\site-packages\matpLotlib")
-# 定义数据增广函数
-transform = transforms . Compose([
-    transforms.RandomResizedCrop(256),
-    transforms . ToTensor(),
-])
-
-# 加载图片
-image = Image.open(r'D:\GitHub_test\classification-basic-sample\data\train\train\cat.jpg')
-
-# 对图片进行增广
-augmented_image = transform(image)
-
-# 显示增广后的图片
-import matplotlib.pyplot as pLt
-pLt . imshow(augmented_image . permute(1, 2, 0))
-pLt. show()
 ```
 ## 运行结果
 
