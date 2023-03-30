@@ -1,4 +1,4 @@
-# fork
+# 数据增广
 ## 四大数据增广（或称数据增强）的方法分别如下：
 
 1、水平翻转和垂直翻转：将照片水平或垂直翻转，以增加数据的多样性和数量，扩展训练集。目的在于解决平移不变性问题。
@@ -228,8 +228,17 @@ if __name__ == '__main__':
                        % (args.model, epoch, val_acc, val_loss)
             torch.save(worker.model, save_dir)
 ```
-## 运行traiin.py最后结果
+## 运行traiin.py结果
 ![image](https://user-images.githubusercontent.com/128216499/228105669-732f916d-8abb-4a1a-be6c-285f1da79ab8.png)
+
+## 运行flip horizontal.py代码（随机水平翻转）
+
+
+
+## 运行data augmentation.py代码
+
+
+## 运行data augmentation.py代码
 
 ## 运行data augmentation.py代码
 ```python
@@ -255,5 +264,5 @@ import matplotlib.pyplot as pLt
 pLt . imshow(augmented_image . permute(1, 2, 0))
 pLt. show()
 ```
-## 结果
-![image](https://user-images.githubusercontent.com/128216499/228540277-a5897670-a589-485d-9285-9f20a9afb523.png)
+## 运行结果
+
