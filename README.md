@@ -267,7 +267,6 @@ transform = transforms . Compose([
     transforms.RandomRotation(degrees=(-10, 10)),
     transforms . ToTensor(),
 ])
-
 # 加载图片
 image1 = Image.open(r'D:\GitHub_test\classification-basic-sample\data\train\train\cat.jpg')
 
@@ -279,6 +278,8 @@ import matplotlib.pyplot as pLt
 pLt . imshow(augmented_image1 . permute(1, 2, 0))
 pLt. show()
 ```
+## 运行结果
+![image](https://user-images.githubusercontent.com/128216499/228820138-fa30eda4-fe93-4016-b4a4-93aad09e833c.png)
 
 ## 运行data augmentation.py代码
 
