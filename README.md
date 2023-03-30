@@ -10,6 +10,7 @@
  
 ## 该实验选择的图片
 ![cat](https://user-images.githubusercontent.com/128216499/228540657-44691d0c-e72c-46b8-afb4-fa837c4101e4.jpg)
+![dog](https://user-images.githubusercontent.com/128216499/228836219-0dd47421-a0ac-42b6-befa-f56f3251ed64.jpg)
 
 ## 运行train.py代码
 ```python
@@ -323,7 +324,7 @@ plt. show()
 ## 运行结果
 ![image](https://user-images.githubusercontent.com/128216499/228820969-943d35af-4586-49ef-b1b0-aac6049f3f80.png)
 
-## 运行代码
+## 运行test.py代码（训练集数据和验证集数据都进行了数据增广，但两张图片不同时展示）
 ```python
 from torchvision import transforms
 from PIL import Image
@@ -360,7 +361,7 @@ plt.show()
 ![image](https://user-images.githubusercontent.com/128216499/228834540-55f0a7e3-802e-4994-9af0-2247e254371f.png)
 ![image](https://user-images.githubusercontent.com/128216499/228834751-242cd548-5bab-442b-a473-081385061291.png)
 
-## 运行test.py代码
+## 运行train_val.py代码（训练集数据和验证集数据都进行了数据增广，但两张图片可以同时展示）
 ```python
 from torchvision import transforms
 from PIL import Image
