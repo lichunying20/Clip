@@ -10,8 +10,11 @@
  
 ## 该实验选择的图片
 训练所用的照片
+
 ![cat](https://user-images.githubusercontent.com/128216499/228540657-44691d0c-e72c-46b8-afb4-fa837c4101e4.jpg)
+
 验证所用的照片
+
 ![dog](https://user-images.githubusercontent.com/128216499/228836219-0dd47421-a0ac-42b6-befa-f56f3251ed64.jpg)
 
 ## 运行train.py代码
@@ -393,3 +396,8 @@ plt.show()
 ```
 ## 运行结果
 ![image](https://user-images.githubusercontent.com/128216499/228833428-7e9ef645-87ce-43a6-b869-2c3bf5851d63.png)
+
+## 个人总结
+1、运行train.py时，始终运行不出来结果，看不到最后图片，只好放弃，不是用这个代码。
+2、flip horizontal.py、rotate.py和scale cutting.py分别对图像进行随机水平翻转、随机旋转和随机裁切，而data augmentation.py三种数据增广方式结合在一起，最后的图像也包含了这三种形式。
+3、test.py和train_val.py都对训练图片和验证图片进行了数据增广，不同的是test.py得到的图片为两张且不能同时出现，而train_val.py得到的图片为一张且包含了训练图片和验证图片。
