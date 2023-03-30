@@ -399,5 +399,7 @@ plt.show()
 
 ## 个人总结
 1、运行train.py时，始终运行不出来结果，看不到最后图片，只好放弃，不是用这个代码。
-2、flip horizontal.py、rotate.py和scale cutting.py分别对图像进行随机水平翻转、随机旋转和随机裁切，而data augmentation.py三种数据增广方式结合在一起，最后的图像也包含了这三种形式。
+
+2、flip horizontal.py、rotate.py和scale cutting.py分别对图像进行随机水平翻转、随机旋转和随机缩放裁切，而data augmentation.py三种数据增广方式结合在一起，最后的图像也包含了这三种形式。
+
 3、test.py和train_val.py都对训练图片和验证图片进行了数据增广，不同的是test.py得到的图片为两张且不能同时出现，而train_val.py得到的图片为一张且包含了训练图片和验证图片。
