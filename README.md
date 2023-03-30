@@ -300,6 +300,9 @@ import matplotlib.pyplot as pLt
 pLt . imshow(augmented_image1 . permute(1, 2, 0))
 pLt. show()
 ```
+## 运行结果
+![image](https://user-images.githubusercontent.com/128216499/228820614-c238d08d-2120-4b59-939a-4b89f89b2e9e.png)
+
 ## 运行data augmentation.py代码
 ```python
 
