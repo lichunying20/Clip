@@ -1,6 +1,5 @@
 # 数据增广
 ## 四大数据增广（或称数据增强）的方法分别如下：
-
 1、水平翻转和垂直翻转：将照片水平或垂直翻转，以增加数据的多样性和数量，扩展训练集。目的在于解决平移不变性问题。
 
 2、随机旋转：对照片进行随机旋转，以增加数据的多样性和角度变化，增强模型的鲁棒性。目的在于解决旋转不变性问题。
@@ -209,7 +208,6 @@ class Worker:
         # 返回重要信息，用于生成模型保存命名
         return 100. * num_correct / len(self.val_loader.dataset), validating_loss
 
-
 if __name__ == '__main__':
     # 初始化
     torch.backends.cudnn.benchmark = True
@@ -314,7 +312,6 @@ transform = transforms . Compose([
     transforms.RandomRotation(degrees=(-10, 10)),
     transforms . ToTensor(),
 ])
-
 # 加载图片
 image1 = Image.open(r'D:\GitHub_test\classification-basic-sample\data\train\train\cat.jpg')
 # 对图片进行增广
