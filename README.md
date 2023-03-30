@@ -254,6 +254,7 @@ pLt. show()
 ```
 
 ## 运行结果
+![image](https://user-images.githubusercontent.com/128216499/228819448-3e92f5ac-77c2-4c73-93dd-79a41f788881.png)
 
 ## 运行data augmentation.py代码
 
