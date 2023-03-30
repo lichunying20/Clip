@@ -357,6 +357,8 @@ plt.imshow(augmented_val_image.permute(1, 2, 0))
 plt.show()
 ```
 ## 运行结果
+![image](https://user-images.githubusercontent.com/128216499/228834540-55f0a7e3-802e-4994-9af0-2247e254371f.png)
+![image](https://user-images.githubusercontent.com/128216499/228834751-242cd548-5bab-442b-a473-081385061291.png)
 
 ## 运行test.py代码
 ```python
