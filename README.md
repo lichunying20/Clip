@@ -243,9 +243,9 @@ image1 = Image.open(r'D:\GitHub_test\classification-basic-sample\data\train\trai
 # 对图片进行增广
 augmented_image1 = transform(image1)
 # 显示增广后的图片
-import matplotlib.pyplot as pLt
-pLt . imshow(augmented_image1 . permute(1, 2, 0))
-pLt. show()
+import matplotlib.pyplot as plt
+plt . imshow(augmented_image1 . permute(1, 2, 0))
+plt. show()
 ```
 ## 运行结果
 ![image](https://user-images.githubusercontent.com/128216499/228819448-3e92f5ac-77c2-4c73-93dd-79a41f788881.png)
@@ -268,9 +268,9 @@ image1 = Image.open(r'D:\GitHub_test\classification-basic-sample\data\train\trai
 augmented_image1 = transform(image1)
 
 # 显示增广后的图片
-import matplotlib.pyplot as pLt
-pLt . imshow(augmented_image1 . permute(1, 2, 0))
-pLt. show()
+import matplotlib.pyplot as plt
+plt . imshow(augmented_image1 . permute(1, 2, 0))
+plt. show()
 ```
 ## 运行结果
 ![image](https://user-images.githubusercontent.com/128216499/228820138-fa30eda4-fe93-4016-b4a4-93aad09e833c.png)
@@ -291,9 +291,9 @@ image1 = Image.open(r'D:\GitHub_test\classification-basic-sample\data\train\trai
 # 对图片进行增广
 augmented_image1 = transform(image1)
 # 显示增广后的图片
-import matplotlib.pyplot as pLt
-pLt . imshow(augmented_image1 . permute(1, 2, 0))
-pLt. show()
+import matplotlib.pyplot as plt
+plt . imshow(augmented_image1 . permute(1, 2, 0))
+plt. show()
 ```
 ## 运行结果
 ![image](https://user-images.githubusercontent.com/128216499/228820614-c238d08d-2120-4b59-939a-4b89f89b2e9e.png)
@@ -316,9 +316,9 @@ image1 = Image.open(r'D:\GitHub_test\classification-basic-sample\data\train\trai
 # 对图片进行增广
 augmented_image1 = transform(image1)
 # 显示增广后的图片
-import matplotlib.pyplot as pLt
-pLt . imshow(augmented_image1 . permute(1, 2, 0))
-pLt. show()
+import matplotlib.pyplot as plt
+plt . imshow(augmented_image1 . permute(1, 2, 0))
+plt. show()
 ```
 ## 运行结果
 ![image](https://user-images.githubusercontent.com/128216499/228820969-943d35af-4586-49ef-b1b0-aac6049f3f80.png)
