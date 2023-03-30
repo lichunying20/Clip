@@ -247,11 +247,10 @@ import matplotlib.pyplot as pLt
 pLt . imshow(augmented_image1 . permute(1, 2, 0))
 pLt. show()
 ```
-
 ## 运行结果
 ![image](https://user-images.githubusercontent.com/128216499/228819448-3e92f5ac-77c2-4c73-93dd-79a41f788881.png)
 
-## 运行rotate.py代码
+## 运行rotate.py代码（随机旋转）
 ```python
 import torch
 import torchvision. transforms as transforms
@@ -276,7 +275,7 @@ pLt. show()
 ## 运行结果
 ![image](https://user-images.githubusercontent.com/128216499/228820138-fa30eda4-fe93-4016-b4a4-93aad09e833c.png)
 
-## 运行scale cutting.py代码
+## 运行scale cutting.py代码（随机缩放裁切，裁切后尺寸256）
 ```python
 import torch
 import torchvision. transforms as transforms
@@ -299,7 +298,7 @@ pLt. show()
 ## 运行结果
 ![image](https://user-images.githubusercontent.com/128216499/228820614-c238d08d-2120-4b59-939a-4b89f89b2e9e.png)
 
-## 运行data augmentation.py代码
+## 运行data augmentation.py代码（三种数据增广相结合）
 ```python
 import torch
 import torchvision. transforms as transforms
