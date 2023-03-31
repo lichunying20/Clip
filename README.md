@@ -403,9 +403,31 @@ plt.show()
 
 ## 对数据集进行数据增广（运行data set.py）
 ```python
+import torchvision.datasets as dset
+import torchvision.transforms as transforms
+from PIL import Image
+import random
+import matplotlib.pyplot as plt
 
+data_dir = r'D:\GitHub_test\classification-basic-sample\cats_and_dogs_dataset\train'
+
+transform = transforms.Compose([
+    transforms.RandomResizedCrop(100, scale=(0.5, 0.5), ratio=(1.0, 1.0)),
+    transforms.RandomHorizontalFlip(p=0.5),
+    transforms.RandomRotation(degrees=(-10, 10)),
+    transforms.ToTensor(),
+])
+
+data = dset.ImageFolder(root=data_dir, transform = transform)
+
+
+for i, (img, label) in enumerate(data):
+    print("Image {}: Label {}".format(i, label))
+
+    plt.show()
 ```
 ## 运行结果
+![image](https://user-images.githubusercontent.com/128216499/229121694-b3262fba-e9f8-4cc8-ba25-538aaa4869e9.png)
 
 ## 个人总结
 1、进行模型训练时（运行train.py），可能会遇到这个错误，需要增加训练集和验证集中图片的数量。
