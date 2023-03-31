@@ -22,6 +22,7 @@
 
 ```
 ## 训练结果
+![1E355E02ED7853404B76F69BB4ED3C54](https://user-images.githubusercontent.com/128216499/229102263-f982f5a5-116d-4140-b3a0-ff92efeedcd9.jpg)
 
 ## 运行flip horizontal.py（随机水平翻转）
 ```python
