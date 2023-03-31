@@ -452,3 +452,5 @@ ZeroDivisionError: float division by zero
 ```python
 transforms.RandomResizedCrop(256, scale=(0.5, 0.5), ratio=(1.0, 1.0)),
 ```
+
+5、在进行数据集的数据增广时，图片都是一张一张出现的，删除一张，下一张才会出现。运行结果中的Label表示每个图片的标签，每个文件夹下都有20张图片，所以标签为0和1各有20张（'cats'文件夹下的所有图像的标签都为0，'dogs'文件夹下的图像标签都为1）。
