@@ -405,9 +405,9 @@ plt.show()
 ```python
 import torchvision.datasets as dset
 import torchvision.transforms as transforms
-from PIL import Image
 import random
 import matplotlib.pyplot as plt
+import numpy as np
 
 data_dir = r'D:\GitHub_test\classification-basic-sample\cats_and_dogs_dataset\train'
 
@@ -418,13 +418,24 @@ transform = transforms.Compose([
     transforms.ToTensor(),
 ])
 
-data = dset.ImageFolder(root=data_dir, transform = transform)
+data = dset.ImageFolder(root=data_dir, transform=transform)
 
+fig = plt.figure(figsize=(10, 10))
 
 for i, (img, label) in enumerate(data):
     print("Image {}: Label {}".format(i, label))
 
-    plt.show()
+    # Convert tensor to numpy array
+    img = img.numpy().transpose((1, 2, 0))
+
+    ax = fig.add_subplot(8, 8, i+1)
+    ax.imshow(img, cmap='gray')
+    ax.set_axis_off()
+
+    if i == 40:
+        break
+
+plt.show()
 ```
 ## 运行结果
 ![image](https://user-images.githubusercontent.com/128216499/229121694-b3262fba-e9f8-4cc8-ba25-538aaa4869e9.png)
