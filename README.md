@@ -188,7 +188,7 @@ plt.show()
 ![image](https://user-images.githubusercontent.com/128216499/228833428-7e9ef645-87ce-43a6-b869-2c3bf5851d63.png)
 
 ## 个人总结
-1、运行train.py时，始终运行不出来结果，看不到最后图片，只好放弃，换个代码使用。
+1、进行模型训练时（运行train.py），可能会遇到这个错误，需要增加训练集和验证集中图片的数量。
 
 2、flip horizontal.py、rotate.py和scale cutting.py分别对图像进行随机水平翻转、随机旋转和随机缩放裁切，而data augmentation.py三种数据增广方式结合在一起，最后的图像也包含了这三种形式。
 
