@@ -196,9 +196,15 @@ plt.show()
 
 4、关于代码的更改：
 
-（1）、随机水平翻转，RandomHorizontalFlip()会将图片随机水平翻转,而p=0.5指的是概率为50%。
-
-（2）、随机旋转，RandomRotation()会对图片进行随机旋转，而degree(-10，10)表示旋转角度的范围为-10度到10度之间，角度范围可以根据自己的需要进行更改。
-   
-（3）、随机缩放裁切，RandomResizedCrop()会将图片随机剪裁为256x256大小的图像，然后缩放到一个比例模型的范围内。通过scale参数设置变换的尺度范围，通过ratio参数控制宽高比的范围，这里设置为（1.0,1.0）即不改变宽高比。
-   
+（1）、随机水平翻转：RandomHorizontalFlip()会将图片随机水平翻转,而p=0.5指的是概率为50%。
+```python
+    transforms.RandomHorizontalFlip(p=0.5),
+```
+（2）、随机旋转：RandomRotation()会对图片进行随机旋转，而degree(-10，10)表示旋转角度的范围为-10度到10度之间，角度范围可以根据自己的需要进行更改。
+```python
+    transforms.RandomRotation(degrees=(-10, 10)),
+```
+（3）、随机缩放裁切：RandomResizedCrop()会将图片随机剪裁为256x256大小的图像，然后缩放到一个比例模型的范围内。通过scale参数设置变换的尺度范围，通过ratio参数控制宽高比的范围，这里设置为（1.0,1.0）即不改变宽高比。
+```python
+transforms.RandomResizedCrop(256, scale=(0.5, 0.5), ratio=(1.0, 1.0)),
+```
