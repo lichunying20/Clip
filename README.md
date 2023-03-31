@@ -401,6 +401,12 @@ plt.show()
 ## 运行结果
 ![image](https://user-images.githubusercontent.com/128216499/228833428-7e9ef645-87ce-43a6-b869-2c3bf5851d63.png)
 
+## 对数据集进行数据增广（运行data set.py）
+```python
+
+```
+## 运行结果
+
 ## 个人总结
 1、进行模型训练时（运行train.py），可能会遇到这个错误，需要增加训练集和验证集中图片的数量。
 ```python
