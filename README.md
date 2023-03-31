@@ -440,6 +440,8 @@ plt.show()
 ## 运行结果
 ![image](https://user-images.githubusercontent.com/128216499/229121694-b3262fba-e9f8-4cc8-ba25-538aaa4869e9.png)
 
+![image](https://user-images.githubusercontent.com/128216499/229126962-a869ade9-23ae-46fc-8974-fd9b76a60850.png)
+
 ## 个人总结
 1、进行模型训练时（运行train.py），可能会遇到这个错误，需要增加训练集和验证集中图片的数量。
 ```python
