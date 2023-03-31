@@ -17,6 +17,12 @@
 
 ![dog](https://user-images.githubusercontent.com/128216499/228836219-0dd47421-a0ac-42b6-befa-f56f3251ed64.jpg)
 
+## 训练模型（运行train.py）
+```python
+
+```
+## 训练结果
+
 ## 运行flip horizontal.py（随机水平翻转）
 ```python
 import torch
